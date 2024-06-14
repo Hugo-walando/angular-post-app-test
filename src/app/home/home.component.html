@@ -1,1 +1,4 @@
-<p>Bonjour!</p>
+<app-post *ngFor="let post of posts" [post]="post">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+</app-post>
